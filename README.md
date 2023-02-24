@@ -1,3 +1,37 @@
+# WTA Specific Documentation
+
+This repository is intended as a starting point for new storymaps which will be displayed from the www.wta.org Plone website.
+
+## Basic Concepts
+
+There is an assumption that a single story map will include some or all of these components, which may vary from story to story:
+
+- A mapbox style defined in Mapbox Studio, and identified by a style URL
+- An intro video at the start of the page
+- Collections of text and images grouped in "chapters", and associated with map geolocations
+- The feature images themselves
+
+In general, images will go into the `/src/images/` folder. Ideally, these images will be optimized from display on the web, since Mapbox does nothing magic in this regard. If an image will display at a maximum of 600x600px, there's no reason to include a 3000px pixel image.
+
+All the text content and all of the settings/behavior of the storymap is defined in `/src/config.js`. The "raw" version of the URL for config.js at a specific commit is what gets saved to a Plone Link object in order to display the storymap in Plone.
+
+## Local Development
+
+Since it's way more efficient to develop a storymap locally on your own computer before testing integration with Plone, everything should still work locally. The visual appearance will be somewhat different locally, because the page is not width-constrained,
+and the CSS applied by the Plone site is different, but hopefully it's close enough to allow efficient local development.
+
+An important implication of this is that the HTML, CSS, and Javascript included in `/src/index.html` **do nothing** once the storymap
+is deployed to the Plone site. These are retained in the repository to enable local development, but will not be included when viewing
+the storymap within Plone. Instead, very similar CSS and JS are included in the Plone template used to render the map.
+
+### Images and Video
+
+When developing locally, images will be loaded from the `/src/images/` folder directly, and video will be loaded from right inside `/src/`.
+When running inside the Plone site, the same images will be fetched from github.com or cdn.statically.io, so all images must be included
+in the repository!
+
+# Mapbox Original Docs Start Here
+
 - [Interactive Storytelling](#interactive-storytelling)
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
@@ -14,11 +48,13 @@
   - [Acknowledgments](#acknowledgments)
 
 # Updated to Mapbox GL JS V2.0.0
+
 - Set `use3dTerrain: true` for 3D maps
 
 ![3D mountains in Colorado](assets/co14ersstory.gif)
 
 # Interactive Storytelling
+
 Some stories are best told with a map. Data journalists covering changing conditions in a population's demographics, the environment, an international conflict, or telling a simple travel story frequently provide geographic context in their graphics.
 
 This template is designed to accelerate building out a "scrollytelling" map story. The primary input is a story broken into sections (`chapters`), each hooked to a particular view of a map.
@@ -28,9 +64,11 @@ Optionally, you can input a custom Mapbox Style with layers styled in Studio and
 The output is an HTML and JavaScript file. These outputs can be hosted on any web-accessible location, with no extra code or infrastructure required. Note that embedding the output as an iFrame in another page will not work as expected. The scroll-driven interface requires the full page.
 
 ## Prerequisites
+
 This template is for data journalists and digital storytellers of any kind. No coding experience is required. If you are planning to include some custom map layers, you will need some familiarity with [Mapbox Studio](https://studio.mapbox.com).
 
 To configure and publish a story, you will need:
+
 - A Mapbox [access token](https://docs.mapbox.com/help/glossary/access-token). Sign up for a free account at [mapbox.com](https://www.mapbox.com/signup/) to get one.
 
 - A text editor. Atom, Sublime Text, and Visual Studio Code are all fine choices.
@@ -50,7 +88,6 @@ The template does not rely on any particular CSS framework, fonts, or images. Th
 ## Getting Started
 
 - Download this repository as a ZIP file using the button above, and unzip it. If you are using `git`, clone this repository.
-
 
 In your local copy of this repository (the unzipped file you downloaded), navigate to the `src/` directory.
 
@@ -108,7 +145,7 @@ Make a copy of `config.js.template` and name it `config.js`. Open the new `confi
         },
 ```
 
-7. **Fill out your sections as needed.**  Give each section a unique name in the section `id` property. This will become the HTML `div` `id`, so avoid spaces in the name. The `title`, `description` properties are optional. The `description` supports HTML tags. If you have an image that goes with that section of the story, add the path to the image in the `image` property.
+7. **Fill out your sections as needed.** Give each section a unique name in the section `id` property. This will become the HTML `div` `id`, so avoid spaces in the name. The `title`, `description` properties are optional. The `description` supports HTML tags. If you have an image that goes with that section of the story, add the path to the image in the `image` property.
 
 8. For `location`, you can use the `helper.html` file to help you determine the map's position. This tool prints the location settings of the map on the screen in a format ready for copy/paste into the template. Optionally, you can change the style in this file to your [custom style](https://docs.mapbox.com/mapbox-gl-js/example/custom-style-id/).
 
@@ -215,8 +252,6 @@ Note: items in bold are **required**.
 
 `projection`: Set the Map object's [projection parameter](https://docs.mapbox.com/mapbox-gl-js/example/projections/) to create a map with a non-Mercator projection.. (Optional)
 
-`auto`: Enables automatic advancement through the chapters. (Optional)
-
 `title`: The title of the overall story. (Optional)
 
 `subtitle`: A subtitle for the story. (Optional)
@@ -234,12 +269,13 @@ Note: items in bold are **required**.
 - `image`: The path to an image to display in this section.
 - `description`: The main story content for the section. This should be aligned with what the reader is seeing on the map. In the vanilla version, this field will render as HTML. Images, links, and other items can be included as HTML.
 - **`location`**: Details about the map display and camera view.
-    - **`center`**: Center coordinates of the map, as `longitude, latitude`
-    - **`zoom`**: Zoom level of the map.
-    - **`pitch`**: Angle of the map view. `0` is straight down, and `60` is highly tilted.
-    - **`bearing`**: Degrees of rotation clockwise from North (`0`). Negative values represent counter-clockwise rotation.
+  - **`center`**: Center coordinates of the map, as `longitude, latitude`
+  - **`zoom`**: Zoom level of the map.
+  - **`pitch`**: Angle of the map view. `0` is straight down, and `60` is highly tilted.
+  - **`bearing`**: Degrees of rotation clockwise from North (`0`). Negative values represent counter-clockwise rotation.
 - `mapAnimation`: Defines the [animation type](https://docs.mapbox.com/mapbox-gl-js/api/#map#jumpto) for transitioning between locations. This property supports 'flyTo', 'easeTo', and 'jumpTo' animations. If not specified, defaults to `flyTo`.
-    - flyTo and easeTo [options](https://docs.mapbox.com/mapbox-gl-js/api/map/#flyto-parameters) (`curve`, `maxDuration`, `minZoom`, `screenSpeed`, `speed`) can be included in the `location` array, for example:
+  - flyTo and easeTo [options](https://docs.mapbox.com/mapbox-gl-js/api/map/#flyto-parameters) (`curve`, `maxDuration`, `minZoom`, `screenSpeed`, `speed`) can be included in the `location` array, for example:
+
 ```
             location: {
                 center: [-113.72917, 48.58938],
@@ -250,14 +286,14 @@ Note: items in bold are **required**.
                 curve: 1
             }
 ```
+
 - `rotateAnimation`: Starts a slow rotation animation at the end of the map transition when set to `true`. The map will rotate 90 degrees over 24 seconds.
 - `callback`: Accepts the name of a JavaScript function and executes the function. Use this if you have custom code you want to run for a chapter, like turning a legend on or off, adding data from an API request, or displaying an interactive graph.
 - `onChapterEnter`: Layers to be displayed/hidden/muted when the section becomes active. _Array of objects_
-    - `layer`: Layer name as assigned in Mapbox Studio.
-    - `opacity`: The opacity to display the layer. `0` is fully transparent, `1` is fully opaque.
-    - `duration`: The length of the opacity transition, numeric, in milliseconds. Default is 300. This is an optional parameter and can be omitted.
+  - `layer`: Layer name as assigned in Mapbox Studio.
+  - `opacity`: The opacity to display the layer. `0` is fully transparent, `1` is fully opaque.
+  - `duration`: The length of the opacity transition, numeric, in milliseconds. Default is 300. This is an optional parameter and can be omitted.
 - `onChapterExit`: Same as `onChapterEnter` except it is triggered when the section becomes inactive. _Array of objects_
-
 
 #### Layer Configuration in your Mapbox Studio Style
 
@@ -269,8 +305,8 @@ This will ensure that the map appears correctly when the story page loads. To ad
 
 - `src`: Code for the template
 - `example`: Example stories
-    - `glacier`: Glaciers of Glacier National Park example
-    - `bike-philly`: Philadelphia bicycle infrastructure example
+  - `glacier`: Glaciers of Glacier National Park example
+  - `bike-philly`: Philadelphia bicycle infrastructure example
 
 ## Deployment
 
@@ -291,12 +327,12 @@ BSD 3-Clause License
 
 ## Acknowledgments
 
-* Lo Bénichou for the idea, support, and awesome feedback throughout the design and build process
-* Paige Moody and Lem Thornton for early testing and feedback
-* Chris Toomey for ushering this work through and keeping things on track
-* Journalists with stories that help us make sense of what goes around us
-* [Digital Democracy](https://www.digital-democracy.org/) and [Rudo Kemper](https://kunukumapping.com/) for [their fork](https://github.com/digidem/mapbox-storytelling-upgraded) that inspired many later features.
-* [Paul Franz](https://github.com/pkfranz) for developing customizations and providing feedback.
+- Lo Bénichou for the idea, support, and awesome feedback throughout the design and build process
+- Paige Moody and Lem Thornton for early testing and feedback
+- Chris Toomey for ushering this work through and keeping things on track
+- Journalists with stories that help us make sense of what goes around us
+- [Digital Democracy](https://www.digital-democracy.org/) and [Rudo Kemper](https://kunukumapping.com/) for [their fork](https://github.com/digidem/mapbox-storytelling-upgraded) that inspired many later features.
+- [Paul Franz](https://github.com/pkfranz) for developing customizations and providing feedback.
 
 ## Notable Examples
 
@@ -307,8 +343,8 @@ BSD 3-Clause License
 - [Nuestro Territorio Es Nuestra Vida: Digital Democracy](http://lab.digital-democracy.org/mapa-sinangoe/)
 - [The Chinese Economic Footprint In Central And Eastern Europe: CSD](https://chinacapture.csd.bg/)
 - [Safe passages: Washington Post](https://www.washingtonpost.com/graphics/2020/climate-solutions/wyoming-wildlife-corridor/)
-- [Polar Star Inn and Seipel Hut: Huttrip](https://map.huttrip.com/ )
-- [Ten Conflicts to watch in 2022: Crisis Group](https://conflicts2022.crisisgroup.org/ )
+- [Polar Star Inn and Seipel Hut: Huttrip](https://map.huttrip.com/)
+- [Ten Conflicts to watch in 2022: Crisis Group](https://conflicts2022.crisisgroup.org/)
 - [The Guiana Shield: The Amazon Conservation Team](https://www.amazonteam.org/maps/guiana-shield/)
 - [Watchlist 2021: International Rescue Committee](https://theirc.github.io/watchlist2021/)
 - [A River Drained: Kontinentalist](https://cdn-images.kontinentalist.com/static-html/food-security-mekong-river-hydropower-dam-climate-change/index.html)
