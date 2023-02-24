@@ -26,9 +26,8 @@ the storymap within Plone. Instead, very similar CSS and JS are included in the 
 
 ### Images and Video
 
-When developing locally, images will be loaded from the `/src/images/` folder directly, and video will be loaded from right inside `/src/`.
-When running inside the Plone site, the same images will be fetched from github.com or cdn.statically.io, so all images must be included
-in the repository!
+When developing locally, images and video will are assumed to be kept in the `/src/images/` folder.
+When running inside the Plone site, the same images will be fetched from github.com or cdn.statically.io, so all images must be included in the repository!
 
 # Mapbox Original Docs Start Here
 
