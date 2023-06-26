@@ -10,53 +10,1496 @@ if (typeof isInsidePlone !== "undefined" && isInsidePlone) {
 var imageRoot = projectRoot + 'images/';
 
 var config = {
-    style: 'mapbox://styles/rachelwendling/cl5slgfrg000015qk821yy7ha',  // You may have a custom style?
-    accessToken: 'pk.eyJ1IjoicmFjaGVsd2VuZGxpbmciLCJhIjoiY2w1c2pobTRhMGFxcTNrbWk5dGprdml0NCJ9.SWxfhiYFmD0C2x2ClwIkwQ',
-    showMarkers: false,
-    theme: 'light',
+    style: 'mapbox://styles/wta/cleiym1xm001i01nvjkh1dtse',
+    accessToken: 'sk.eyJ1Ijoid3RhIiwiYSI6ImNsZDR4aXhwcTB3dXYzcXFsMGtjMzAzc2wifQ.2ay5Ejlq7CPd7SE2D0Ni0g',
+    showMarkers: true,
+    markerColor: '#3FB1CE',
+    inset: true,
+    theme: 'dark',
     use3dTerrain: true,
-    title: '',
-    logo: '',
-    subtitle: '',
-    introVideoURL: imageRoot + 'ExampleIntroVideo.mp4',
-    byline: '',
-    footer: 'Thank you to our members and volunteers for making this work possible. <a href="https://www.wta.org/losttrails">Learn more about our work on lost trails and get involved at wta.org/losttrails.</a>',
-    chapters: [
-        {
-            id: 'pasayten',
-            alignment: 'center',
-            title: '',
-            image: imageRoot + 'Lesamiz.jpeg',
-            imageCredit: 'Rachel Wendling',
-            title: 'A Rugged, Wild Place',
-            description: 'Just east of the Cascade crest lies the 531,000-acre Pasayten Wilderness. Spanning from the rolling Okanogan Highlands to the craggy North Cascades Peaks — the Pasayten offers miles of expansive views, rolling tundra, glacier carved peaks and unbeatable backpacking opportunities. The wilderness contains nearly 150 mountain peaks higher than 7,500 feet, over 160 bodies of water and the largest population of lynx in the lower 48.',
+    auto: false,
+    title: "Trails Rebooted",
+    subtitle: "Making Washington's trails the best place to be",
+    byline: 'By Anna Roth',
+    footer: `WTA's <a href="https://www.wta.org/trailsrebooted">Trails Rebooted campaign<a> has been working since 2019 to support our most popular recreation areas. That means improving existing trails, championing the construction of new ones and helping hikers see the role they play in the future of trails. See what we've done so far, and what's on the horizon at wta.org/trailsrebooted.<br>`,
+    chapters, 
+            id: "Expanding Spokane's Trail Network",
+            alignment: 'left',
+            hidden: false,
+            title: 'Adding 3 new trails near Spokane',
+            image: 'antoinepeak.png',
+            description: 'WTA has been building new trails near Spokane, including Mica and Antoine Peaks, Mount Spokane and the Saltese Uplands. Each trail built creates more opportunity for loop hikes or connections to other greenspaces, like the 11.5 mile trail between Liberty Lake Regional Park and Mica Peak.',
             location: {
-              center: [-120.48902, 48.79047],
-              zoom: 9.86,
-              pitch: 0.50,
-              bearing: 0.00
+                center: [47.658779, -117.426048],
+                zoom: 8.5,
+                pitch: 60,
+                bearing: 0
             },
-            onChapterEnter: [
+            mapAnimation: 'easeTo',
+            rotateAnimation: true,
+            callback: '',
+             onChapterEnter: [
                 {
-                    layer: 'Pasayten Wilderness',
-                    opacity: 0.4
+                    layer: 'Spokane Projects',
+                    opacity: 0.5
                 },
                 {
-                    layer: 'Boundary Trail',
+                    layer: 'Mica Peak to Liberty Lake Traverse',
                     opacity: 0
                 },
-
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
             ],
             onChapterExit: [
-              {
-                  layer: 'Pasayten Wilderness',
-                  opacity: 0.4
-              },
-              {
-                  layer: 'Boundary Trail',
-                  opacity: 0
-              },
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0.5
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 1
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+        
+            id: 'Mica Peak',
+            alignment: 'right',
+            hidden: false,
+            title: 'Mica Peak to Liberty Lake',
+            image: 'saltese uplands_trailkat.jpeg',
+            description: `An 11.5-mile trail on Mica Peak <a href="https://www.wta.org/news/signpost/a-new-connection-near-spokane">opened in 2020</a>, making an <a href="https://www.wta.org/go-hiking/hikes/mica-peak-to-liberty-lake-traverse">excellent day hike</a> just a few minutes from town. <br> WTA crew leader and former board member Todd Dunfield has made this traverse <a href="https://www.wta.org/go-hiking/trip-reports/trip_report.2023-01-09.7617029549">a January tradition</a>. It's a slog in the snow, but people have had wonderful experiences here year round. You can even see the Saltese Uplands, another location WTA is working in, from a section of the traverse.`,
+            location: {
+                center: [47.5744, -117.1355],
+                zoom: 8.5,
+                pitch: 60,
+                bearing: -43.2,
+                // flyTo additional controls-
+                //speed: 2, // make the flying slow
+                //curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 1
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0.5
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+        
+            id: 'Saltese Uplands',
+            alignment: 'left',
+            hidden: false,
+            title: 'Expanding hiking options',
+            image: 'saltese flats_beaverdawg.jpg',
+            description: "Just a mile south of I-90, the Saltese Uplands are an excellent leg-stretcher or local spot to visit year-round. There are 7 miles of trails found here in a fragile shrub steppe habitat. In landscapes like this, it's very important for visitors to stay on trail, because the high desert of Central Washington is a sensitive environment. <br>So WTA is working on improving trails to make the way clearer and to keep hikers on trail here. Preserving the environment here helps people coexist with the white-tailed deer, badger, coyote, bobcats, and birds of prey who call this area home.",
+            location: {
+                center: [47.6422, -117.1263],
+                zoom: 12.52,
+                pitch: 8.01,
+                bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 1
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 1
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 1
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+    
+        
+            id: 'Antoine Peak Access',
+            alignment: 'center',
+            hidden: false,
+            title: 'Adding trails to a next-door mountain',
+            image: './path/to/image/source.png',
+            description: 'With fantastic views overlooking Liberty Lake, the Spokane Valley, and north to Mount Spokane and the Selkirks, Antoine Peak is popular with locals. Investments in the trail system here have been under way since 2013, resulting in three different access points for the trail network on Antoine Peak. <br>Most recently, WTA has been working on the west access on Brevier Road and the trails there. <br>The most recent addition to the Conservation Area is the Etter Ranch property, with a trailhead located in the Spokane Valley at Wellesley and Flora. The trailhead opened in 2021, and offers access to the Arrowleaf Trail, which connects to the Emerald Necklace Loop. The nearby Lost Apple Trail serves as a shorter and lower elevation option for visitors to enjoy year-round.',
+            location: {
+                center: [47.7009, -117.1706],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'easeTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter:[
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 1
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            id: 'transition',
+            alignment: 'fully',
+            hidden: false,
+            title: "Let's Connect",
+            image: './path/to/image/source.png',
+            description: `Investments in trail systems are a central part of WTA's Trails Rebooted work statewide. One way to add a lot to a trail network with minimal budget is by, <a href='https://www.wta.org/news/signpost/the-power-of-loops-connections'>adding connector trails to already-existing networks.</a> This helps an area meet increasing need for recreation without needing to plan, permit and scout entire new trails. We're working in several other parts of Washington, including Silver Star Mountain in the southwest part of the state.`,
+            location: {
+                center: [45.772608, -122.244337],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:'',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0.5
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 1
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            id: 'Silver Star',
+            alignment: 'center',
+            hidden: false,
+            title: 'A Bright Future for Silver Star',
+            image: './path/to/image/source.png',
+            description: `Just outside Battle Ground, the Silver Star area provides a fantastic area for hikers to experience wildflowers, a 5-volcano view, and a variety of trails. <br>However, road access stymies hikers approaching from the west or the south. Many trip reporters describe vehicular acrobatics or parking miles from the trailhead, opting to roadwalk rather than risk their cars. <br> Over the last three years, WTA engaged tribes,  hikers,  motorized recreators, and land managers, and together created <a href='https://www.wta.org/news/signpost/a-vision-for-the-future-of-silver-star-recreation-area/'>a vision plan</a>. The plan  builds upon the efforts of past advocates who worked very hard to ensure protections for the area going back to the 1970s and 80s.`,
+            location: {
+                center: [45.7423, -122.1910],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0.5
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 1
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+id: 'Bluff Mountain/Yacolt Burn WTA trails',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: './path/to/image/source.png',
+            description: "Trails in the Yacolt Burn State Forest connect into Silver Star, supporting part of this vision plan. In the last several years, WTA has improved recreation opportunities here with the Silver Shadow Trail and the Appaloosa trail with support from Back Country Horsemen of Washington. The two trails offer two new loop hikes. This year, we're tackling deferred maintenance on the Bluff Mountain and Bells Mountain Trails, too.",
+            location: {
+                center: [45.7027776457543, -122.10746815393587],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 1
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 1
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+id: 'Bells Mountain',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: './path/to/image/source.png',
+            description: "On Bells Mountain Trail, several work parties this spring and summer improved footing through a muddy area crews know as the Slip'N'Slide. The long trail provides access from Moulton Falls County Park and is a crucial connector for people to access the Forest",
+            location: {
+                center: [45.8332, -122.3842],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 1
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 1
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                },
+            ],
+            id: 'Bluff Mountain work',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: './path/to/image/source.png',
+            description: "Meanwhile at Bluff Mountain, a crew logged the trail out despite cold weather and snow in late June. <br>Vision plans set a direction and demonstrate buy-in from stakeholders - but they are not tied to a timeline; they are aspirational and future oriented. That means hikers can expect improvements to continue in this area for years to come!",
+            location: {
+                center: [45.8332, -122.3842],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'easeTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 1
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 1
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                },
+            ],
+            id: 'Ambassador programs',
+            alignment: 'center',
+            hidden: false,
+            title: 'Friendly faces at trailheads',
+            image: './path/to/image/source.png',
+            description: "Rebooting Washington's trail system takes more than trail maintenance or building new trails. It's about changing how hikers interact with the landscape, too. <br> Trailhead ambassadors have been staffing trailheads in popular recreation areas in recent years. These helpful folks stand at trailheads and offer hikers advice about what to expect on trail, information about the area, even suggestions for other places to go if the trailhead is full.",
+            location: {
+                center: [45.8332, -122.3842],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0.5
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 1
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                },
+            ],
+id: 'Ambassador programs - 2',
+            alignment: 'center',
+            hidden: false,
+            title: 'Past Successes Bring New Partnerships',
+            image: './path/to/image/source.png',
+            description: "We have had ambassadors <a href='https://www.wta.org/news/signpost/q-a-with-steven-colson-for-trailhead-ambassador-program> at trailheads on the Mountain Loop Highway </a>, in the Columbia River Gorge, in Gothic Basin and now we're launching a <a href='https://www.wta.org/get-involved/outreach/wdfw-ambassadors'> program with Washington Department of Fish and Wildlife </a> to staff six trailheads in Central Washington this summer. <br>Ambassador programs are a key part of Trails Rebooted, since they offer one-on-one encounters with trail pros at the start of your hike, connecting hikers and helping people understand how they contribute to the hiking experience here.",
+            location: {
+                center: [45.8332, -122.3842],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 1
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0.5
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                },
+            ],
+            id: 'MLH Work Locations',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: './path/to/image/source.png',
+            description: "With the passage of the Great American Outdoors Act (thanks in part to <a href='https://www.wta.org/news/signpost/gaoa-provides-vital-funding-for-public-lands'>advocacy from hikers</a>, the Forest Service began addressing maintenance backlogs statewide. This includes long overdue improvements to Mount Pilchuck and Heather Lake trails, which coincide with a road improvement project here this summer. <br>The road improvement is part of a timber sale along the Mount Pilchuck road. It has closed the road, but once it reopens, hikers can look forward to trailhead improvements at Pilchuck and a more formalized parking area for Heather Lake.",
+            location: {
+                center: [448.08497011365875, -121.78626439635774],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 1
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0.5
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 1
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                },
+            ],
+id: 'Other work areas',
+            alignment: 'center',
+            hidden: false,
+            title: 'Expanding Opportunity',
+            image: './path/to/image/source.png',
+            description: "Trails Rebooted is also focusing on trails in the Snoquera area outside Mount Rainier and the Teanaway Community Forest just east of Snoqualmie Pass. Both of these areas are increasing in popularity as Washington's hikers look to increase their connections with trails.",
+            location: {
+                center: [45.8332, -122.3842],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                },
+            ],
+            id: 'Snoquera',
+            alignment: 'center',
+            hidden: false,
+            title: 'Peering into a National Park',
+            image: './path/to/image/source.png',
+            description: "Just west of Mount Rainier on Highway 410 is the Snoquera area. Including hikes like Noble Knob, the Palisades, and Snoquera Falls, working on trails here helps expand hiking opportunities in a place near Mount Rainier National Park <br> This summer, you can join WTA volunteer crews continuing work on the Echo Lake Trail reroute. They'll be installing handrails on new bridges across the Greenwater River, and repairing trails damaged by fire in the Norse Peak wilderness. The work is all geared towards dispersing use from Mount Rainier; many trails here boast great views of the mountain.",
+            location: {
+                center: [45.8332, -122.3842],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0.5
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 1
+                },
+            ],
+            id: 'Teanawy==ay',
+            alignment: 'left',
+            hidden: false,
+            title: '',
+            image: './path/to/image/source.png',
+            description: "WTA has been involved in the Teanaway Community Forest since a community of nonprofits and other stakeholders came together to preserve it. Like at Silver Star, it's a lesson in how long it can take to develop a well-thought out trail network. Originally purchased in 2013 the trail plan was approved <a href='https://www.wta.org/news/signpost/partnership-brings-new-trails-to-the-teanaway-community-forest'>last year</a>. This year, we're excited to have a youth volunteer vacation working on the Cheese Rock trail in the fall!",
+            location: {
+                center: [45.8332, -122.3842],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                },
+            ],
+            id: 'Conclusion',
+            alignment: 'center',
+            hidden: false,
+            title: '',
+            image: './path/to/image/source.png',
+            description: "Washington's trail system requires constant focus and attention, but it's not just about trail work. To truly reboot trails, WTA needs advocates to speak up for areas they want preserved; stewards to volunteer as ambassadors AND trail work volunteers; and hikers like you to see themselves as an active part of making WTA's trails welcoming and a pleasant place to be.",
+            location: {
+                center: [45.8332, -122.3842],
+                zoom: 4,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [
+               
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                }
+            ],
+            onChapterExit: [
+                {
+                    layer: 'Spokane Projects',
+                    opacity: 0
+                },
+                {
+                    layer: 'Mica Peak to Liberty Lake Traverse',
+                    opacity: 0
+                },
+                {
+                    layer: 'Saltese Ridge Reroute',
+                    opacity: 0
+                },
+                {
+                    layer: 'Etter Ranch',
+                    opacity: 0
+                },
+                {
+                    layer: 'Silver Star THs',
+                    opacity: 0
+                },
+                {
+                    layer: 'Bluff Mountain/Yacolt Burn WTA Trails',
+                    opacity: 0
+                },
+                {
+                    layer: 'WDFW Ambassador Locations',
+                    opacity: 0
+                },
+		{
+                    layer: 'MLH work locations',
+                    opacity: 0
+                },
+                {
+                    layer: 'Snoquera and Teanaway',
+                    opacity: 0
+                },
             ]
-        },
-    ]
+}
 };
