@@ -1,4 +1,4 @@
-var githubProjectName = 'mapboxstory-template';  // Set this to the ID of your github repository
+var githubProjectName = 'alroth/trailsrebooted-2023-storymap';  // Set this to the ID of your github repository
 
 // If we're inside Plone, we load images and video from github (actually, from a CDN), but when working
 // locally, we want to load things from the local project folder
@@ -7,7 +7,7 @@ if (typeof isInsidePlone !== "undefined" && isInsidePlone) {
     projectRoot = 'https://raw.githubusercontent.com/washingtontrails/' + githubProjectName + '/main/src/';
 }
 
-var imageRoot = projectRoot + 'images/';
+var imageRoot = trailsrebooted-2023-storymap + 'images/';
 
 var config = {
     style: 'mapbox://styles/wta/cleiym1xm001i01nvjkh1dtse',
