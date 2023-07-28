@@ -38,7 +38,7 @@ var config = {
     use3dTerrain: true,
     auto: false,
     title: '',
-    introImageURL: imageRoot + ['TrailsRebootedcover.png'],
+    introImageURL: imageRoot + 'TrailsRebootedcover.png',
     subtitle: '',
     byline: '',
     footer: `Since 2019, WTA's <a href="https://www.wta.org/trailsrebooted">Trails Rebooted campaign</a> has been supporting our most popular recreation areas by improving existing trails, championing the construction of new ones and helping hikers see the role they play in the future of trails. See what we've done so far, and what's on the horizon at wta.org/trailsrebooted.<br>`,
