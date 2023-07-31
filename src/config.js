@@ -27,7 +27,7 @@ window.testCallback = () => {
   
   }
 
-var imageRoot = 'https://raw.githubusercontent.com/alroth/trailsrebooted-2023-storymap/main/src/images/'
+var imageRoot = 'https://github.com/washingtontrails/mapboxstory-trailsrebooted2023/tree/main/src/images'
 var config = {
     style: 'mapbox://styles/wta/cleiym1xm001i01nvjkh1dtse',
     accessToken: 'pk.eyJ1Ijoid3RhIiwiYSI6ImNqOXJkbGdlNjY5ajIzM21xNm5uZXk3eWUifQ.padg8NGbni9aK8jaLiuTuA',
