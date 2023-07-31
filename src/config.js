@@ -982,7 +982,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'CASE STUDY: Connect Trails to Create Loops',
-            image: imageRoot + 'appaloosatrailbridge.jpeg',
+            image: imageRoot + '',
             description: "Also in Yacolt Burn is the <a href='https://www.wta.org/go-hiking/hikes/appaloosa-trail'>Appaloosa Trail</a> to Hidden Falls, a route WTA finished in 2021 with support from Back Country Horsemen of Washington. This trail makes a fantastic six-mile day hike in the forest, and links to the pre-existing Tarbell Trail. <br><br>WTA also built a connector to the Tarbell Trail on the other side of the State Forest called <a href='https://www.wta.org/go-hiking/hikes/silver-shadow-loop'>Silver Shadow</a>. This route created a 4.6-mile loop hike through a lovely open forest.",
             location: {
                 center: [-122.32022, 45.76496],
@@ -1066,8 +1066,8 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '2020 - 2023: Bluff Mountain Logouts',
-            image: imageRoot + 'bluffbeforeandafter.jpg',
-            description: "Past the Appaloosa Trail's connection with the Tarbell Trail, hikers can link into the Silver Star trail network. Silver Star is known for its views, as well as its more rugged trails, like Bluff Mountain. <br><br>Bluff Mountain requires plenty of maintenance; crews work on this trail annually so hikers can access the higher levels of the Silver Star area.",
+            image: imageRoot + '',
+            description: "Past the Appaloosa Trail's connection with the Tarbell Trail, hikers can link back into the Silver Star trail network. Bluff Mountain is one of Silver Star's more remote trails, offering rugged day hiking. <br><br>Bluff Mountain Trail requires plenty of maintenance; crews work here annually clearing logs and re-establishing the trail after winter storms have done their damage.",
             location: {
                 center: [-122.19152, 45.74160],
                 zoom: 13.92,
@@ -1151,8 +1151,8 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: imageRoot + 'bluffmountainbcrt.png',
-            description: "Hundreds of of people have worked to support an extensive trail network in Silver Star. Volunteers work alongside our paid Lost Trails Found crew (above). And in 2023, a journalist for The Columbian <a href='https://www.columbian.com/news/2023/jun/24/washington-trails-association-preserves-connection-in-clark-county-wild-spaces/'>joined a backcountry response team on this trail</a> to get a real taste of what trail work is like. Maintaining clear trails is especially important this year, since <a href='https://www.wta.org/news/signpost/know-before-you-go-trails-that-will-be-closed-this-summer'>construction or road washouts have closed a lot of popular trails throughout Washington</a> for the season.",
+            image: imageRoot + '',
+            description: "Hundreds of people have worked to support an extensive trail network in Silver Star. Volunteers work alongside our paid Lost Trails Found crews (above). And in 2023, a journalist for The Columbian <a href='https://www.columbian.com/news/2023/jun/24/washington-trails-association-preserves-connection-in-clark-county-wild-spaces/'>joined a backcountry response team on this trail</a> to get a real taste of what trail work is like. <br><br>Maintaining clear trails is especially important this year, since <a href='https://www.wta.org/news/signpost/know-before-you-go-trails-that-will-be-closed-this-summer'>construction or road washouts have closed a lot of popular trails throughout Washington</a> for the season.",
             location: {
                 center: [-122.30350, 45.78059],
                 zoom: 12.42,
