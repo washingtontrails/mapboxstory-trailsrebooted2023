@@ -982,7 +982,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'CASE STUDY: Connect Trails to Create Loops',
-            image: imageRoot + '',
+            image: imageRoot + 'appaloosatrailbridge.jpeg',
             description: "Also in Yacolt Burn is the <a href='https://www.wta.org/go-hiking/hikes/appaloosa-trail'>Appaloosa Trail</a> to Hidden Falls, a route WTA finished in 2021 with support from Back Country Horsemen of Washington. This trail makes a fantastic six-mile day hike in the forest, and links to the pre-existing Tarbell Trail. <br><br>WTA also built a connector to the Tarbell Trail on the other side of the State Forest called <a href='https://www.wta.org/go-hiking/hikes/silver-shadow-loop'>Silver Shadow</a>. This route created a 4.6-mile loop hike through a lovely open forest.",
             location: {
                 center: [-122.32022, 45.76496],
@@ -1066,7 +1066,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '2020 - 2023: Bluff Mountain Logouts',
-            image: imageRoot + '',
+            image: imageRoot + 'bluffbeforeandafter.png',
             description: "Past the Appaloosa Trail's connection with the Tarbell Trail, hikers can link back into the Silver Star trail network. Bluff Mountain is one of Silver Star's more remote trails, offering rugged day hiking. <br><br>Bluff Mountain Trail requires plenty of maintenance; crews work here annually clearing logs and re-establishing the trail after winter storms have done their damage.",
             location: {
                 center: [-122.19152, 45.74160],
@@ -1151,7 +1151,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: imageRoot + '',
+            image: imageRoot + 'bluffmountainbcrt',
             description: "Hundreds of people have worked to support an extensive trail network in Silver Star. Volunteers work alongside our paid Lost Trails Found crews (above). And in 2023, a journalist for The Columbian <a href='https://www.columbian.com/news/2023/jun/24/washington-trails-association-preserves-connection-in-clark-county-wild-spaces/'>joined a backcountry response team on this trail</a> to get a real taste of what trail work is like. <br><br>Maintaining clear trails is especially important this year, since <a href='https://www.wta.org/news/signpost/know-before-you-go-trails-that-will-be-closed-this-summer'>construction or road washouts have closed a lot of popular trails throughout Washington</a> for the season.",
             location: {
                 center: [-122.30350, 45.78059],
@@ -1236,8 +1236,8 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '2019 - Today: Focus on the Mountain Loop Highway',
-            image: 'dozer.jpeg',
-            description: "With the 2020 passage of the Great American Outdoors Act (thanks in part to <a href='https://www.wta.org/news/signpost/gaoa-provides-vital-funding-for-public-lands'>advocacy from hikers like you</a>, the Forest Service began addressing maintenance backlogs statewide! This includes long overdue improvements to many trails on the Mountain Loop Highway. <br>Many popular trails will be closed for some of the summer. Most of them should reopen in time for you to hike them this year, with the notable exception of Mount Pilchuck.",
+            image: imageRoot + 'dozer.jpeg',
+            description: "With the 2020 passage of the Great American Outdoors Act (thanks in part to <a href='https://www.wta.org/news/signpost/gaoa-provides-vital-funding-for-public-lands'>advocacy from hikers like you</a>, the Forest Service began addressing maintenance backlogs statewide! This includes long overdue improvements to many trails on the Mountain Loop Highway. <br><br>Many popular trails will be closed for some of the summer. Most of them should reopen in time for you to hike them this year, with the notable exception of Mount Pilchuck.",
             location: {
                 center: [-121.97977, 48.14008],
                 zoom: 10.13,
@@ -1490,7 +1490,7 @@ var config = {
             hidden: false,
             title: 'Helping Hikers be Trail Smart',
             image: '',
-            description: "Ambassadors also share our <a href='https://www.wta.org/go-outside/trail-smarts'>Trail Smarts</a> in-person with Washington's hiking community. Trail Smarts is WTA's package detailing hiking etiquette. We incorporate these into all our communications, including social media and newsletters, but one-on-one time with ambassadors is one of the best ways to convey concepts like Leave No Trace and responsible recreation to hikers heading out for the day.",
+            description: "Ambassadors also share our <a href='https://www.wta.org/go-outside/trail-smarts'>Trail Smarts</a> in-person with Washington's hiking community. Trail Smarts is a set of resources that anyone can access and share detailing hiking etiquette. We incorporate these into all our communications, including social media and newsletters, but one-on-one time with ambassadors is one of the best ways to convey concepts like Leave No Trace and responsible recreation to hikers heading out for the day.",
             location: {
                 center: [-120.91816, 47.11753],
                 zoom: 12.00,
@@ -1656,8 +1656,8 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: '',
-            image: imageRoot + '',
-            description: "Our WDFW ambassadors are right in between our last two Trails Rebooted focus areas: Snoquera (outside Mount Rainier) and the Teanaway Community Forest just east of Snoqualmie Pass. Both of these areas are increasing in popularity as Washington's hikers look to increase their connections with trails.",
+            image: imageRoot + 'middle-fork-teanaway_david-hagen.jpg',
+            description: "Those WDFW trailheads are situated right in between our last two Trails Rebooted focus areas: Snoquera (outside Mount Rainier) and the Teanaway Community Forest just east of Snoqualmie Pass, making a corridor of stewardship in Central Washington. Both Snoquera and the Teanaway are increasing in popularity as Washington's hikers look to increase their connections with trails, and WTA is there helping people recreate responsibly.",
             location: {
                 center: [-120.91816, 47.11753],
                 zoom: 9.85,
@@ -1739,7 +1739,7 @@ var config = {
             id: 'snoquera',
             alignment: 'left',
             hidden: false,
-            title: '2019 - Present: Peering Into A National Park',
+            title: '2019 - Present: Working and Playing Near A National Park',
             image: imageRoot + 'snoqeracrew.png',
             description: "Crews working in the Snoquera region are restoring access to a network of trails damaged by fire and erosion. <br><br>This summer, volunteers are rerouting the Echo Lake Trail and installing handrails on new bridges across the Greenwater River. <br><br>We're also repairing trails damaged by fire in the Norse Peak wilderness (outlined in orange). The work is all geared towards dispersing use from Mount Rainier; many trails here boast great views of the mountain with fewer people than the park.",
             location: {
@@ -1829,7 +1829,7 @@ var config = {
             hidden: false,
             title: '2013 - Today: Striving for Trails in the Teanaway',
             image: imageRoot + 'teanawayhiker.jpg',
-            description: "<br><br>Like at Silver Star, the Teanaway is a real-time example of how long it can take to develop a well-thought out trail network. <a href='https://www.wta.org/news/signpost/meet-the-teanaway-community-forest-2'>Originally purchased in 2013</a> the trail plan was approved just <a href='https://www.wta.org/news/signpost/partnership-brings-new-trails-to-the-teanaway-community-forest'>last year</a>. After almost a year of WTA staff advising on the trails plan, we're excited to have a youth volunteer vacation working on the Cheese Rock trail in the summer!",
+            description: "<br><br>Like at Silver Star, the Teanaway is a real-time example of how long it can take to develop a well-thought-out trail network. <a href='https://www.wta.org/news/signpost/meet-the-teanaway-community-forest-2'>Originally purchased in 2013</a> the trail plan was approved just <a href='https://www.wta.org/news/signpost/partnership-brings-new-trails-to-the-teanaway-community-forest'>last year</a>. After almost a year of WTA staff advising on the trails plan, we're excited to have a youth volunteer vacation working on the Cheese Rock trail in the summer!",
             location: {
                 center: [-120.97528, 47.28061],
                 zoom: 11.15,
@@ -1913,7 +1913,7 @@ var config = {
             hidden: false,
             title: 'CASE STUDY: Frog Mountain',
             image: '',
-            description: `Part of rebooting a trail system is pushing for more trails to be built in order to give hikers more places to be outside. This June, the brand new <a href='https://www.wta.org/news/signpost/discover-frog-mountain-trail-a-triumph-of-conservation-and-recreation-in-wild-sky-wilderness/'>Frog Mountain trail</a> opened in Washington's newest wilderness - the Wild Sky Wilderness. <br><br>Having a new trail in a designated wilderness is very rare, so this is a big win for hikers. A new trail here will also help take pressure off other nearby trails like Heybrook Lookout, Evergreen Mountain, and other popular locations off Highway 2.`,
+            description: `Further north from the Teanaway, another trails plan is further along. <br><br>Part of rebooting a trail system is pushing for more trails so hikers have more places to be outside. This June, the brand new <a href='https://www.wta.org/news/signpost/discover-frog-mountain-trail-a-triumph-of-conservation-and-recreation-in-wild-sky-wilderness/'>Frog Mountain trail</a> opened in Washington's newest wilderness - the Wild Sky Wilderness. <br><br>It's another success story born from years of planning. Having a new trail in a designated wilderness is very rare, so this is a big win for hikers. The new trail not only offers a new perspective on wilderness, it will help take pressure off other nearby trails like Heybrook Lookout, Evergreen Mountain, and other popular locations off Highway 2.`,
             location: {
                 center: [-121.31442, 47.88487],
                 zoom: 12,
@@ -1998,7 +1998,7 @@ var config = {
             hidden: false,
             title: 'CASE STUDY: Striped Peak',
             image: imageRoot + 'stripedpeak.jpg',
-            description: `We can't forget about the Olympic Peninsula! In 2022, <a href='https://www.wta.org/news/signpost/striped-peak-trail-complete'>WTA opened a 3.5-mile trail on Striped Peak</a>, just a few miles outside of Port Angeles. 270 volunteers came together to build this trail during 83 work parties over the course of 3.5 years. It's part of a larger loop on Striped Peak, so hikers can do a 7 mile out-and-back or a 7.5-mile loop. Like the trails in Silver Star, the additional route on Striped Peak will help hikers flow in a loop, and offers a nice, long day hike relatively close to the nearby city.`,
+            description: `We can't forget about the Olympic Peninsula! In 2022, <a href='https://www.wta.org/news/signpost/striped-peak-trail-complete'>WTA opened a 3.5-mile trail on Striped Peak</a>, just a few miles outside of Port Angeles. 270 volunteers came together to build this trail during 83 work parties over the course of three and a half years. It's part of a larger loop on Striped Peak, so hikers can do a 7 mile out-and-back or a 7.5-mile loop. Like the trails in Silver Star, the additional route on Striped Peak will help hikers flow in a loop, and offers a nice, long day hike relatively close to the nearby city.`,
             location: {
                 center: [-123.69940, 48.15884],
                 zoom: 14.55,
