@@ -129,7 +129,7 @@ var config = {
             alignment: 'left',
             title: 'Building A Better Trail Network Near Spokane',
             image: imageRoot + 'stumpremoval.png',
-            description: 'For years, WTA has been building new trails near Spokane. Our recent projects include routes on Mica and Antoine Peaks and at the Saltese Uplands. Each trail built creates more opportunity for hikers to connect to greenspaces, like the 11.5 mile trail between Liberty Lake Regional Park and Mica Peak.',
+            description: 'For years, WTA has been building new trails near Spokane. Our recent projects include routes on <b>Mica and Antoine Peaks</b> and at the <b>Saltese Uplands</b>. Each trail built creates more opportunity for hikers to connect to greenspaces near town. Some offer substantial outings just a short drive away, like the 11.5 mile trail between Liberty Lake Regional Park and Mica Peak.',
             location: {
                 center: [-117.18175, 47.61076],
                 zoom: 12.48,
@@ -140,23 +140,23 @@ var config = {
              onChapterEnter: [
                 {
                     layer: 'spokaneprojects',
-                    opacity: 0.8
+                    opacity: 1
                 },
                 {
                     layer: 'mplltraverse',
-                    opacity: 0.8
+                    opacity: 1
                 },
                 {
                     layer: 'salteserr',
-                    opacity: 0.5
+                    opacity: 1
                 },
                 {
                     layer: 'etterranch',
-                    opacity: 0.5
+                    opacity: 1
                 },
                 {
                     layer: 'antoinepeak',
-                    opacity: 0.5
+                    opacity: 1
                 },
                 {
                     layer: 'silver-star-trailheads',
@@ -216,7 +216,7 @@ var config = {
             hidden: false,
             title: 'CASE STUDY: Connecting Mica Peak to Liberty Lake',
             image: imageRoot + 'saltesefrommica.png',
-            description: `The 11.5-mile California Creek Trail <a href="https://www.wta.org/go-hiking/hikes/mica-peak-to-liberty-lake-traverse">connects Mica Peak to Liberty Lake</a>. Atfter years of hiker advocacy and volunteer trail work, it <a href="https://www.wta.org/news/signpost/a-new-connection-near-spokane">opened in 2020</a>, giving the nearly 1 million people living in the Spokane Valley an opportunity to visit the headwaters of three major creek systems and to experience some rich elk habitat, all just 30 minutes from the city center.`,
+            description: `The 11.5-mile California Creek Trail <a href="https://www.wta.org/go-hiking/hikes/mica-peak-to-liberty-lake-traverse">connects Mica Peak to Liberty Lake</a>. After years of hiker advocacy and volunteer trail work, it <a href="https://www.wta.org/news/signpost/a-new-connection-near-spokane">opened in 2020</a>, giving the nearly 1 million people living in the Spokane Valley an opportunity to visit the headwaters of three major creek systems and to experience some rich elk habitat, all just 30 minutes from the city center.`,
             location: {
                 center: [-117.11415, 47.59748],
                 zoom: 13.04,
@@ -391,7 +391,7 @@ var config = {
             hidden: false,
             title: '2013 - Today: Creating Trails in a Local Conservation Area',
             image: imageRoot + 'antoinepeakview.jpeg',
-            description: 'With fantastic views overlooking Liberty Lake, the Spokane Valley, and north to Mount Spokane and the Selkirks, Antoine Peak boasts a robust trail network thanks to investments here that have been under way since 2013. We started by helping secure Antoine Peak as a place to recreate. Today, there are three different trailheads, each with several hike options stemming from them.',
+            description: 'With fantastic views overlooking Liberty Lake, the Spokane Valley, and north to Mount Spokane and the Selkirks, Antoine Peak boasts a robust trail network thanks to investments here that have been under way since 2013. We started by <a href='https://www.wta.org/news/signpost/better-trails-coming-to-spokanes-antoine-peak'>helping secure Antoine Peak as a place to recreate.</a> Today, there are three different trailheads, each with several hike options stemming from them.',
             location: {
             center: [-117.19218, 47.72051],
             zoom: 13.48,
@@ -476,7 +476,7 @@ var config = {
             hidden: false,
             title: 'Many Hikes, One Trailhead',
             image: imageRoot + 'etterranch.png',
-            description: 'Most recently, WTA has been working on the trails accessed from Brevier Road. Known as Etter Ranch, this Spokane Valley trailhead opened in 2021 and offers access to three trails: the Arrowleaf Trail, which connects to the Emerald Necklace Loop, and the Lost Apple Trail. Emerald Necklace is a great long day hike, while Lost Apple serves as a shorter and lower elevation option for visitors to enjoy year-round.',
+            description: 'Most recently, WTA has been working on the trails accessed from Brevier Road. Known as Etter Ranch, this Spokane Valley trailhead opened in 2021 and offers access to three trails: the <b>Arrowleaf Trail</b>, which connects to the <b>Emerald Necklace Loop</b>, and the <b>Lost Apple Trail</b>. Emerald Necklace is a great long day hike, while Lost Apple serves as a shorter and lower elevation option for visitors to enjoy year-round.',
             location: {
                 center: [-117.16120, 47.71089],
                 zoom: 14.51,
@@ -560,7 +560,7 @@ var config = {
             hidden: false,
             title: "Let's Connect",
             image: imageRoot + 'silvershadow.png',
-            description: `A cost-effective way to enhance a trail network is by <a href='https://www.wta.org/news/signpost/the-power-of-loops-connections'>adding connector trails to already-existing networks</a>. This helps meet Washington's increasing need for recreation options on tight budgets. We've done this on trail networks statewide, from Spokane to <b><a href='https://www.fox13seattle.com/video/1208910'>Little Mountain Park</a></b> in Mount Vernon, <a href='https://www.wta.org/news/signpost/new-loops-new-hikes-new-views-in-the-columbia-river-gorge'>Lyle Cherry Orchard</a> in the Gorge, and at Silver Star Mountain in southwest Washington.`,
+            description: `A cost-effective way to enhance a trail network is by <a href='https://www.wta.org/news/signpost/the-power-of-loops-connections'>adding connector trails to already-existing networks</a>. This helps meet Washington's increasing need for recreation options on tight budgets. We've done this on trail networks statewide, from Spokane to <a href='https://www.fox13seattle.com/video/1208910'>Little Mountain Park</a> in Mount Vernon, <a href='https://www.wta.org/news/signpost/new-loops-new-hikes-new-views-in-the-columbia-river-gorge'>Lyle Cherry Orchard</a> in the Gorge, and at <b>Silver Star Mountain in southwest Washington.</b>`,
             location: {
                 center: [-122.23228, 45.85334],
                 zoom: 11.56,
@@ -645,7 +645,7 @@ var config = {
             hidden: false,
             title: '1990 - Today: Championining the Silver Star Recreation Area',
             image: imageRoot + 'silver star vista.png',
-            description: `Just outside Battle Ground, the Silver Star area provides a fantastic area for hikers to experience wildflowers, a 5-volcano view, and a variety of trails. <br><br>Hikers who understand the value of having robust trail systems have advocated for trails in this area since the 1990s.`,
+            description: `Just outside Battle Ground, the Silver Star area provides a fantastic area for hikers to experience wildflowers, a 5-volcano view, and a variety of trails. <br><br>Hikers who understand the value of having robust trail systems have advocated for trails in this area since the 1990s. Thanks to their efforts, this area has several popular trails, and we've been able to add a few new trails in the last couple of years. But with Silver Star's popularity among various user groups, we needed a cohesive approach to management here.`,
             location: {
                 center: [-122.27163, 45.73335],
                 zoom: 12.81,
@@ -815,7 +815,7 @@ var config = {
             hidden: false,
             title: 'Fixing the Roads',
             image: imageRoot + 'caron4109.jpg',
-            description: `One major issue that has stymied hikers for years are the roads in Silver Star. People approaching from the west or the south report spectacular vehicular acrobatics to reach the trailhead. Alternately, other visitors park miles from the trailhead, opting to roadwalk rather than risk their car's suspension.`,
+            description: `One major issue that has stymied hikers for years are the roads in Silver Star. People approaching from the west or the south report spectacular vehicular acrobatics to reach the trailhead. Other visitors park miles from the trailhead, opting to roadwalk rather than risk their car's suspension.`,
             location: {
                 center: [-122.1910, 45.7423],
                 zoom: 11,
@@ -899,7 +899,7 @@ var config = {
             hidden: false,
             title: '',
             image: imageRoot + 'bellsmountaintrail.png',
-            description: "Luckily, vehicular access is easier from the south. Visit the <a href='https://www.wta.org/go-hiking/hikes/bells-mt'>Bells Mountain Trail</a>, where <b>this spring</b> WTA work parties improved footing through a muddy area crews know as the Slip'N'Slide. <br></br><br></br>The long trail provides access from Moulton Falls County Park and is a crucial connector for people to access the <a href='https://www.wta.org/go-outside/hikes?title=yacolt+burn&region=all&min_rating=0&show_incomplete=on&mileage%3Alist%3Afloat=0.0&mileage%3Alist%3Afloat=25&elevation_gain%3Alist%3Aint=0&elevation_gain%3Alist%3Aint=5000&highpoint=&searchabletext=&sort_on=&filter=Search&_authenticator=f576ccb15ba35cd9d8dbd165d6017d18da3887ac'>Yacolt Burn State Forest</a>, which shares trails with Silver Star.",
+            description: "Luckily, vehicular access is easier from the south. Visit the <a href='https://www.wta.org/go-hiking/hikes/bells-mt'>Bells Mountain Trail</a>, where <b>this spring</b> WTA work parties improved footing through a muddy area crews know as the Slip'N'Slide. <br><br>The long trail provides access from Moulton Falls County Park and is a crucial connector for people to access the <a href='https://www.wta.org/go-outside/hikes?title=yacolt+burn&region=all&min_rating=0&show_incomplete=on&mileage%3Alist%3Afloat=0.0&mileage%3Alist%3Afloat=25&elevation_gain%3Alist%3Aint=0&elevation_gain%3Alist%3Aint=5000&highpoint=&searchabletext=&sort_on=&filter=Search&_authenticator=f576ccb15ba35cd9d8dbd165d6017d18da3887ac'>Yacolt Burn State Forest</a>, which shares trails with Silver Star.",
             location: {
                 center: [-122.39451041131447, 45.83264308646734],
                 zoom: 13,
