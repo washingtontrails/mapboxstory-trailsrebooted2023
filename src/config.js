@@ -1151,7 +1151,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: '',
-            image: imageRoot + 'bluffmountainbcrt',
+            image: imageRoot + 'bluffmountainbcrt.jpg',
             description: "Hundreds of people have worked to support an extensive trail network in Silver Star. Volunteers work alongside our paid Lost Trails Found crews (above). And in 2023, a journalist for The Columbian <a href='https://www.columbian.com/news/2023/jun/24/washington-trails-association-preserves-connection-in-clark-county-wild-spaces/'>joined a backcountry response team on this trail</a> to get a real taste of what trail work is like. <br><br>Maintaining clear trails is especially important this year, since <a href='https://www.wta.org/news/signpost/know-before-you-go-trails-that-will-be-closed-this-summer'>construction or road washouts have closed a lot of popular trails throughout Washington</a> for the season.",
             location: {
                 center: [-122.30350, 45.78059],
@@ -1656,7 +1656,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: '',
-            image: imageRoot + 'middle-fork-teanaway_david-hagen.jpg',
+            image: '',
             description: "Those WDFW trailheads are situated right in between our last two Trails Rebooted focus areas: Snoquera (outside Mount Rainier) and the Teanaway Community Forest just east of Snoqualmie Pass, making a corridor of stewardship in Central Washington. Both Snoquera and the Teanaway are increasing in popularity as Washington's hikers look to increase their connections with trails, and WTA is there helping people recreate responsibly.",
             location: {
                 center: [-120.91816, 47.11753],
