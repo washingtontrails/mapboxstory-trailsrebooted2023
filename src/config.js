@@ -129,6 +129,7 @@ var config = {
             alignment: 'left',
             title: 'Building A Better Trail Network Near Spokane',
             image: imageRoot + 'stumpremoval.png',
+	    imageCredit: 'Todd Dunfield',
             description: 'For years, WTA has been building new trails near Spokane. Our recent projects include routes on <b>Mica and Antoine Peaks</b> and at the <b>Saltese Uplands</b>. Each trail built creates more opportunity for hikers to connect to greenspaces near town. Some offer substantial outings just a short drive away, like the 11.5 mile trail between Liberty Lake Regional Park and Mica Peak.',
             location: {
                 center: [-117.18175, 47.61076],
@@ -216,6 +217,7 @@ var config = {
             hidden: false,
             title: 'CASE STUDY: Connecting Mica Peak to Liberty Lake',
             image: imageRoot + 'saltesefrommica.png',
+	    imageCredit: 'Trip reporter TrailKat',
             description: `The 11.5-mile California Creek Trail <a href="https://www.wta.org/go-hiking/hikes/mica-peak-to-liberty-lake-traverse">connects Mica Peak to Liberty Lake</a>. After years of hiker advocacy and volunteer trail work, it <a href="https://www.wta.org/news/signpost/a-new-connection-near-spokane">opened in 2020</a>, giving the nearly 1 million people living in the Spokane Valley an opportunity to visit the headwaters of three major creek systems and to experience some rich elk habitat, all just 30 minutes from the city center.`,
             location: {
                 center: [-117.11415, 47.59748],
@@ -306,6 +308,7 @@ var config = {
             hidden: false,
             title: 'More to Explore',
             image: imageRoot + 'salteseflatshiker.png',
+     	    imageCredit: 'Trip reporter BeaverDawg',
             description: "Connecting into the California Creek trail is the Saltese Ridge Trail, which joins the Mica Peak Traverse with the <a href='https://www.wta.org/go-hiking/hikes/saltese-uplands'>Saltese Uplands</a> Conservation area, further extending hiking options in Spokane. <br><br>Well-built trail is especially important here, since the high desert is a sensitive environment. The realigned trail (orange zigzag) that WTA built in 2022 will last longer than the original route, and helps visitors coexist with minimal impact with white-tailed deer, badger, coyote, bobcats, and birds of prey who call this area home.",
             location: {
                 center: [-117.09623, 47.57889],
@@ -391,6 +394,7 @@ var config = {
             hidden: false,
             title: '2013 - Today: Creating Trails in a Local Conservation Area',
             image: imageRoot + 'antoinepeakview.jpeg',
+	    image: imageCredit 'Trip reporter TrailKat',
             description: 'With fantastic views overlooking Liberty Lake, the Spokane Valley, and north to Mount Spokane and the Selkirks, Antoine Peak boasts a robust trail network thanks to investments here that have been under way since 2013. We started by helping secure Antoine Peak as a place to recreate. Today, there are three different trailheads, each with several hike options stemming from them.',
             location: {
             center: [-117.19218, 47.72051],
@@ -476,6 +480,7 @@ var config = {
             hidden: false,
             title: 'Many Hikes, One Trailhead',
             image: imageRoot + 'etterranch.png',
+	    imageCredit: 'Holly Weiler',
             description: 'Most recently, WTA has been working on the trails accessed from Brevier Road. Known as Etter Ranch, this Spokane Valley trailhead opened in 2021 and offers access to three trails: the <b>Arrowleaf Trail</b>, which connects to the <b>Emerald Necklace Loop</b>, and the <b>Lost Apple Trail</b>. Emerald Necklace is a great long day hike, while Lost Apple serves as a shorter and lower elevation option for visitors to enjoy year-round.',
             location: {
                 center: [-117.16120, 47.71089],
@@ -560,6 +565,7 @@ var config = {
             hidden: false,
             title: "Let's Connect",
             image: imageRoot + 'silvershadow.png',
+	    imageCredit: 'Brandon Tigner',
             description: `A cost-effective way to enhance a trail network is by <a href='https://www.wta.org/news/signpost/the-power-of-loops-connections'>adding connector trails to already-existing networks</a>. This helps meet Washington's increasing need for recreation options on tight budgets. We've done this on trail networks statewide, from Spokane to <a href='https://www.fox13seattle.com/video/1208910'>Little Mountain Park</a> in Mount Vernon, <a href='https://www.wta.org/news/signpost/new-loops-new-hikes-new-views-in-the-columbia-river-gorge'>Lyle Cherry Orchard</a> in the Gorge, and at <b>Silver Star Mountain in southwest Washington.</b>`,
             location: {
                 center: [-122.23228, 45.85334],
@@ -645,6 +651,7 @@ var config = {
             hidden: false,
             title: '1990 - Today: Championining the Silver Star Recreation Area',
             image: imageRoot + 'silver star vista.png',
+	    imageCredit: 'Trip reporter Tanty',
             description: `Just outside Battle Ground, the Silver Star area provides a fantastic area for hikers to experience wildflowers, a 5-volcano view, and a variety of trails. <br><br>Hikers who understand the value of having robust trail systems have advocated for trails in this area since the 1990s. Thanks to their efforts, this area has several popular trails, and we've been able to add a few new trails in the last couple of years. But with Silver Star's popularity among various user groups, we needed a cohesive approach to management here.`,
             location: {
                 center: [-122.27163, 45.73335],
@@ -731,6 +738,7 @@ var config = {
             hidden: false,
             title: '2022: Charting a Bright Future for Silver Star',
             image: imageRoot + 'hidden falls.jpg',
+	    imageCredit: 'Anna Roth',
             description: "This year, WTA, in collaboration with tribes, state and federal agencies, hikers, residents and other stakeholders compiled <a href='https://www.wta.org/news/signpost/a-vision-for-the-future-of-silver-star-recreation-area'>an updated vision plan for Silver Star</a>. It takes into consideration a variety of priorities for the land, and will guide management in this area for years to come, while building on goals set by advocates in the past.",
             location: {
                 center: [-122.24903, 45.78099],
@@ -815,6 +823,7 @@ var config = {
             hidden: false,
             title: 'Fixing the Roads',
             image: imageRoot + 'caron4109.jpg',
+	    imageCredit: 'Cheryl Hill'
             description: `One major issue that has stymied hikers for years are the roads in Silver Star. People approaching from the west or the south report spectacular vehicular acrobatics to reach the trailhead. Other visitors park miles from the trailhead, opting to roadwalk rather than risk their car's suspension.`,
             location: {
                 center: [-122.1910, 45.7423],
@@ -899,6 +908,7 @@ var config = {
             hidden: false,
             title: '',
             image: imageRoot + 'bellsmountaintrail.png',
+	    imageCredit: 'Ryan Ojerio',
             description: "Luckily, vehicular access is easier from the south. Visit the <a href='https://www.wta.org/go-hiking/hikes/bells-mt'>Bells Mountain Trail</a>, where <b>this spring</b> WTA work parties improved footing through a muddy area crews know as the Slip'N'Slide. <br><br>The long trail provides access from Moulton Falls County Park and is a crucial connector for people to access the <a href='https://www.wta.org/go-outside/hikes?title=yacolt+burn&region=all&min_rating=0&show_incomplete=on&mileage%3Alist%3Afloat=0.0&mileage%3Alist%3Afloat=25&elevation_gain%3Alist%3Aint=0&elevation_gain%3Alist%3Aint=5000&highpoint=&searchabletext=&sort_on=&filter=Search&_authenticator=f576ccb15ba35cd9d8dbd165d6017d18da3887ac'>Yacolt Burn State Forest</a>, which shares trails with Silver Star.",
             location: {
                 center: [-122.39451041131447, 45.83264308646734],
@@ -983,6 +993,7 @@ var config = {
             hidden: false,
             title: 'CASE STUDY: Connect Trails to Create Loops',
             image: imageRoot + 'appaloosatrailbridge.jpeg',
+	    imageCredit: 'Anna Roth',
             description: "Also in Yacolt Burn is the <a href='https://www.wta.org/go-hiking/hikes/appaloosa-trail'>Appaloosa Trail</a> to Hidden Falls, a route WTA finished in 2021 with support from Back Country Horsemen of Washington. This trail makes a fantastic six-mile day hike in the forest, and links to the pre-existing Tarbell Trail. <br><br>WTA also built a connector to the Tarbell Trail on the other side of the State Forest called <a href='https://www.wta.org/go-hiking/hikes/silver-shadow-loop'>Silver Shadow</a>. This route created a 4.6-mile loop hike through a lovely open forest.",
             location: {
                 center: [-122.32022, 45.76496],
@@ -1067,6 +1078,7 @@ var config = {
             hidden: false,
             title: '2020 - 2023: Bluff Mountain Logouts',
             image: imageRoot + 'bluffbeforeandafter.png',
+	    imageCredit: 'Zachary Toliver',
             description: "Past the Appaloosa Trail's connection with the Tarbell Trail, hikers can link back into the Silver Star trail network. Bluff Mountain is one of Silver Star's more remote trails, offering rugged day hiking. <br><br>Bluff Mountain Trail requires plenty of maintenance; crews work here annually clearing logs and re-establishing the trail after winter storms have done their damage.",
             location: {
                 center: [-122.19152, 45.74160],
@@ -1152,6 +1164,7 @@ var config = {
             hidden: false,
             title: '',
             image: imageRoot + 'bluffmountainbcrt.jpg',
+	    imageCredit: 'Zachary Toliver',
             description: "Hundreds of people have worked to support an extensive trail network in Silver Star. Volunteers work alongside our paid Lost Trails Found crews (above). And in 2023, a journalist for The Columbian <a href='https://www.columbian.com/news/2023/jun/24/washington-trails-association-preserves-connection-in-clark-county-wild-spaces/'>joined a backcountry response team on this trail</a> to get a real taste of what trail work is like. <br><br>Maintaining clear trails is especially important this year, since <a href='https://www.wta.org/news/signpost/know-before-you-go-trails-that-will-be-closed-this-summer'>construction or road washouts have closed a lot of popular trails throughout Washington</a> for the season.",
             location: {
                 center: [-122.30350, 45.78059],
@@ -1237,6 +1250,7 @@ var config = {
             hidden: false,
             title: '2019 - Today: Focus on the Mountain Loop Highway',
             image: imageRoot + 'dozer.jpeg',
+	    imageCredit: 'Jessi Loerch',
             description: "With the 2020 passage of the Great American Outdoors Act (thanks in part to <a href='https://www.wta.org/news/signpost/gaoa-provides-vital-funding-for-public-lands'>advocacy from hikers like you</a>, the Forest Service began addressing maintenance backlogs statewide! This includes long overdue improvements to many trails on the Mountain Loop Highway. <br><br>Many popular trails will be closed for some of the summer. Most of them should reopen in time for you to hike them this year, with the notable exception of Mount Pilchuck.",
             location: {
                 center: [-121.97977, 48.14008],
@@ -1406,6 +1420,7 @@ var config = {
             hidden: false,
             title: 'Trailhead Ambassadors: Friendly faces helping hikers',
             image: imageRoot + 'wtaselfie.jpg',
+	    imageCredit: 'Brady Ward',
             description: "<b>Rebooting Washington's trail system takes more than on-the-ground road and trail maintenance.</b> It's about <a href='https://www.wta.org/go-outside/trail-smarts/nice-people-nice-hikes'>changing how hikers interact with the landscape, too.</a> <br><br>In recent years, ambassadors have been staffing trailheads in popular recreation areas, offering hikers advice about what to expect on trail, information about the area, even suggestions for other places to go if the trailhead is full.",
             location: {
                 center: [-120.91816, 47.11753],
@@ -1574,6 +1589,7 @@ var config = {
             hidden: false,
             title: 'CASE STUDY: Past Success Seeds New Partnerships',
             image: imageRoot + 'hikeronpilchuck.png',
+	    imageCredit: 'WTA Photo Contest',
             description: "In 2021, we stationed ambassadors <a href='https://www.wta.org/news/signpost/q-a-with-steven-colson-for-trailhead-ambassador-program> at trailheads on the Mountain Loop Highway</a> and in Gothic Basin, as well as at trailheads in the Columbia River Gorge. Building on the success of trailhead ambassador programs in the past, this year we launched a <a href='https://www.wta.org/get-involved/outreach/wdfw-ambassadors'>program with the Washington Department of Fish and Wildlife </a> to staff six trailheads in Central Washington this summer. <br>Ambassador programs are a key part of Trails Rebooted, since they provide hikers with advice from trail pros right at the start of their day. In addition, they help hikers understand how <a href='https://www.wta.org/go-outside/trail-smarts/nice-people-nice-hikes'>they contribute to everyone's experience on trail.</a>",
             location: {
                 center: [-121.17165, 47.09298],
@@ -1741,6 +1757,7 @@ var config = {
             hidden: false,
             title: '2019 - Present: Working and Playing Near A National Park',
             image: imageRoot + 'snoqeracrew.png',
+	    imageCredit: 'Zachary Toliver',
             description: "Crews working in the Snoquera region are restoring access to a network of trails damaged by fire and erosion. <br><br>This summer, volunteers are rerouting the Echo Lake Trail and installing handrails on new bridges across the Greenwater River. <br><br>We're also repairing trails damaged by fire in the Norse Peak wilderness (outlined in orange). The work is all geared towards dispersing use from Mount Rainier; many trails here boast great views of the mountain with fewer people than the park.",
             location: {
                 center: [-121.38690325729652, 47.013913665312785],
@@ -1829,6 +1846,7 @@ var config = {
             hidden: false,
             title: '2013 - Today: Striving for Trails in the Teanaway',
             image: imageRoot + 'teanawayhiker.jpg',
+	    imageCredit: 'David Hagen',
             description: "<br><br>Like at Silver Star, the Teanaway is a real-time example of how long it can take to develop a well-thought-out trail network. <a href='https://www.wta.org/news/signpost/meet-the-teanaway-community-forest-2'>Originally purchased in 2013</a> the trail plan was approved just <a href='https://www.wta.org/news/signpost/partnership-brings-new-trails-to-the-teanaway-community-forest'>last year</a>. After almost a year of WTA staff advising on the trails plan, we're excited to have a youth volunteer vacation working on the Cheese Rock trail in the summer!",
             location: {
                 center: [-120.97528, 47.28061],
@@ -1998,6 +2016,7 @@ var config = {
             hidden: false,
             title: 'CASE STUDY: Striped Peak',
             image: imageRoot + 'stripedpeak.jpg',
+	    imageCredit: 'Eric Nagle',
             description: `We can't forget about the Olympic Peninsula! In 2022, <a href='https://www.wta.org/news/signpost/striped-peak-trail-complete'>WTA opened a 3.5-mile trail on Striped Peak</a>, just a few miles outside of Port Angeles. 270 volunteers came together to build this trail during 83 work parties over the course of three and a half years. It's part of a larger loop on Striped Peak, so hikers can do a 7 mile out-and-back or a 7.5-mile loop. Like the trails in Silver Star, the additional route on Striped Peak will help hikers flow in a loop, and offers a nice, long day hike relatively close to the nearby city.`,
             location: {
                 center: [-123.69940, 48.15884],
