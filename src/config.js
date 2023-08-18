@@ -394,7 +394,7 @@ var config = {
             hidden: false,
             title: '2013 - Today: Creating Trails in a Local Conservation Area',
             image: imageRoot + 'antoinepeakview.jpeg',
-	    image: imageCredit 'Trip reporter TrailKat',
+	    imageCredit: 'Trip reporter TrailKat',
             description: 'With fantastic views overlooking Liberty Lake, the Spokane Valley, and north to Mount Spokane and the Selkirks, Antoine Peak boasts a robust trail network thanks to investments here that have been under way since 2013. We started by helping secure Antoine Peak as a place to recreate. Today, there are three different trailheads, each with several hike options stemming from them.',
             location: {
             center: [-117.19218, 47.72051],
