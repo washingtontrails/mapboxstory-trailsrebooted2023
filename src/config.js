@@ -823,7 +823,7 @@ var config = {
             hidden: false,
             title: 'Fixing the Roads',
             image: imageRoot + 'caron4109.jpg',
-	    imageCredit: 'Cheryl Hill'
+	    imageCredit: 'Cheryl Hill',
             description: `One major issue that has stymied hikers for years are the roads in Silver Star. People approaching from the west or the south report spectacular vehicular acrobatics to reach the trailhead. Other visitors park miles from the trailhead, opting to roadwalk rather than risk their car's suspension.`,
             location: {
                 center: [-122.1910, 45.7423],
